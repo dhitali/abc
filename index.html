@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse Computation Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Traverse Computation Calculator</h1>
+        <form id="traverseForm">
+            <label for="station">Station:</label>
+            <input type="number" id="station" name="station" required>
+
+            <label for="observedAngle">Observed Angle (degrees, minutes, seconds):</label>
+            <input type="text" id="observedAngle" name="observedAngle" placeholder="deg,min,sec" required>
+
+            <label for="distance">Distance:</label>
+            <input type="number" id="distance" name="distance" required>
+
+            <label for="initialEasting">Initial Easting:</label>
+            <input type="number" id="initialEasting" name="initialEasting" required>
+
+            <label for="initialNorthing">Initial Northing:</label>
+            <input type="number" id="initialNorthing" name="initialNorthing" required>
+
+            <label for="bearing">Bearing (degrees, minutes, seconds):</label>
+            <input type="text" id="bearing" name="bearing" placeholder="deg,min,sec" required>
+
+            <button type="button" id="addDataBtn">Add Data</button>
+            <button type="button" id="calculateBtn">Calculate</button>
+        </form>
+
+        <table id="traverseTable">
+            <thead>
+                <tr>
+                    <th>Station</th>
+                    <th>Observed Angle</th>
+                    <th>Distance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
